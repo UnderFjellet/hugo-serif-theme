@@ -45,13 +45,8 @@
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           <div class="feature-image"><img width="100" height="100" alt="Opening hours logo" src="/images/time_icon.svg" /></div>
-          <h2 class="feature-title">Opening Hours</h2>
+          <h2 class="feature-title">Åpningstider</h2>
           <table>
-            <thead>
-              <tr>
-                {{ range .Site.Data.opening.headers }} <th>{{ . | humanize }}</th> {{ end }}
-              </tr>
-            </thead>
             <tbody>
               {{ range .Site.Data.opening.rows }}
               <tr>
